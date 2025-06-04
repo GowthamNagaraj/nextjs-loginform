@@ -1,5 +1,6 @@
 "use client"
 
+
 import { useState } from "react";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
 
   const [error, setError] = useState("")
 
-  function handleLogin(e){
+  function handleLogin( e: React.MouseEvent<HTMLButtonElement> ) {
     e.preventDefault();
     if (form.username == "") {
       setError("Please enter your username")
